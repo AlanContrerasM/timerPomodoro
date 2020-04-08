@@ -22,10 +22,30 @@
     font-weight: 300;
     grid-column: 1 / span 6;
     grid-row:  1/ span 1;
+    display: grid;
+    align-items: center;
 }
 .item{
     background-color: black;
     color: green;
+    display: grid;
+    align-items: center;
+    padding: 1vw;
+    box-shadow: 1px 1px 1px .5px #999;
+    opacity: .85;
+}
+.item:hover{
+    opacity: 1;
+}
+.item:active{
+    box-shadow: 2px 2px 2px 1px #666;
+}
+.number{
+    background-color: black;
+    color: green;
+    display: grid;
+    align-items: center;
+    padding: 1vw;
 }
 #stoppersContainer{
     grid-column: 5 / span 1;
@@ -33,7 +53,7 @@
     display: grid;
     row-gap: .4em;
 }
-#playButton{
+#play{
     grid-column: 2 / span 1;
     grid-row: 2 / span 3;
 }
