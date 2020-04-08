@@ -1,0 +1,54 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5,1fr);
+    background-color: whitesmoke;
+    gap: .4em;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* compatibility background color */
+    background: rgb(101,129,97);
+    background: linear-gradient(0deg, rgba(101,129,97,1) 0%, rgba(2,2,9,1) 100%); 
+    font-size: 4vw;
+    font-weight: bolder;
+    
+}
+#title {
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+    font-weight: 300;
+    grid-column: 1 / span 6;
+    grid-row:  1/ span 1;
+}
+.item{
+    background-color: black;
+    color: green;
+}
+#stoppersContainer{
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 3;
+    display: grid;
+    row-gap: .4em;
+}
+#playButton{
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 3;
+}
+.number{
+    font-size: 6vw;
+}
+#left{
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 4;
+}
+#right{
+    grid-column: 6 / span 1;
+    grid-row: 2 / span 4;
+}
+#bottom{
+    grid-column: 1 / span 6;
+    grid-row: 5 / span 1;
+}
